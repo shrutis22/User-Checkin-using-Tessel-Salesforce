@@ -1,0 +1,90 @@
+{
+    "fullName": "Employee__c",
+    "actionOverrides": [
+        {
+            "actionName": "Accept",
+            "type": "Default"
+        },
+        {
+            "actionName": "CancelEdit",
+            "type": "Default"
+        },
+        {
+            "actionName": "Clone",
+            "type": "Default"
+        },
+        {
+            "actionName": "Delete",
+            "type": "Default"
+        },
+        {
+            "actionName": "Edit",
+            "type": "Default"
+        },
+        {
+            "actionName": "Follow",
+            "type": "Default"
+        },
+        {
+            "actionName": "List",
+            "type": "Default"
+        },
+        {
+            "actionName": "New",
+            "type": "Default"
+        },
+        {
+            "actionName": "SaveEdit",
+            "type": "Default"
+        },
+        {
+            "actionName": "Tab",
+            "type": "Default"
+        },
+        {
+            "actionName": "View",
+            "type": "Default"
+        }
+    ],
+    "allowInChatterGroups": false,
+    "compactLayoutAssignment": "SYSTEM",
+    "deploymentStatus": "Deployed",
+    "enableActivities": false,
+    "enableBulkApi": false,
+    "enableFeeds": false,
+    "enableHistory": true,
+    "enableReports": true,
+    "enableSearch": true,
+    "enableSharing": false,
+    "enableStreamingApi": false,
+    "fields": {
+        "fullName": "EmpId__c",
+        "caseSensitive": false,
+        "externalId": false,
+        "label": "EmpId",
+        "length": "255",
+        "required": true,
+        "trackHistory": false,
+        "trackTrending": false,
+        "type": "Text",
+        "unique": true
+    },
+    "label": "Employee",
+    "listViews": {
+        "fullName": "All",
+        "columns": [
+            "NAME",
+            "EmpId__c"
+        ],
+        "filterScope": "Everything",
+        "label": "All"
+    },
+    "nameField": {
+        "label": "Employee Name",
+        "trackHistory": false,
+        "type": "Text"
+    },
+    "pluralLabel": "Employees",
+    "searchLayouts": null,
+    "sharingModel": "ReadWrite"
+}

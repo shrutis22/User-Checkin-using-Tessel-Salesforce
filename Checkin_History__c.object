@@ -1,0 +1,129 @@
+{
+    "fullName": "Checkin_History__c",
+    "actionOverrides": [
+        {
+            "actionName": "Accept",
+            "type": "Default"
+        },
+        {
+            "actionName": "CancelEdit",
+            "type": "Default"
+        },
+        {
+            "actionName": "Clone",
+            "type": "Default"
+        },
+        {
+            "actionName": "Delete",
+            "type": "Default"
+        },
+        {
+            "actionName": "Edit",
+            "type": "Default"
+        },
+        {
+            "actionName": "Follow",
+            "type": "Default"
+        },
+        {
+            "actionName": "List",
+            "type": "Default"
+        },
+        {
+            "actionName": "New",
+            "type": "Default"
+        },
+        {
+            "actionName": "SaveEdit",
+            "type": "Default"
+        },
+        {
+            "actionName": "Tab",
+            "type": "Default"
+        },
+        {
+            "actionName": "View",
+            "type": "Default"
+        }
+    ],
+    "allowInChatterGroups": false,
+    "compactLayoutAssignment": "SYSTEM",
+    "deploymentStatus": "Deployed",
+    "enableActivities": false,
+    "enableBulkApi": false,
+    "enableFeeds": false,
+    "enableHistory": true,
+    "enableReports": true,
+    "enableSearch": true,
+    "enableSharing": false,
+    "enableStreamingApi": false,
+    "fields": [
+        {
+            "fullName": "Checkin_Date__c",
+            "externalId": false,
+            "formula": "DATEVALUE( Checkin_Time__c )",
+            "formulaTreatBlanksAs": "BlankAsZero",
+            "label": "Checkin Date",
+            "required": false,
+            "trackHistory": false,
+            "trackTrending": false,
+            "type": "Date"
+        },
+        {
+            "fullName": "Checkin_Time__c",
+            "externalId": false,
+            "label": "Checkin Time",
+            "required": false,
+            "trackHistory": false,
+            "trackTrending": false,
+            "type": "DateTime"
+        },
+        {
+            "fullName": "Checkout_Time__c",
+            "externalId": false,
+            "label": "Checkout Time",
+            "required": false,
+            "trackHistory": false,
+            "trackTrending": false,
+            "type": "DateTime"
+        },
+        {
+            "fullName": "Duration__c",
+            "externalId": false,
+            "formula": "Checkout_Time__c - Checkin_Time__c",
+            "formulaTreatBlanksAs": "BlankAsZero",
+            "label": "Duration",
+            "precision": "18",
+            "required": false,
+            "scale": "2",
+            "trackHistory": false,
+            "trackTrending": false,
+            "type": "Number",
+            "unique": false
+        },
+        {
+            "fullName": "Employee__c",
+            "externalId": false,
+            "label": "Employee",
+            "referenceTo": "Employee__c",
+            "relationshipLabel": "Checkin Histories",
+            "relationshipName": "Checkin_Histories",
+            "relationshipOrder": "0",
+            "reparentableMasterDetail": false,
+            "trackHistory": false,
+            "trackTrending": false,
+            "type": "MasterDetail",
+            "writeRequiresMasterRead": false
+        }
+    ],
+    "label": "Checkin History",
+    "nameField": {
+        "displayFormat": "CH-{0000000000}",
+        "label": "Checkin History Id",
+        "trackHistory": false,
+        "type": "AutoNumber"
+    },
+    "pluralLabel": "Checkin Histories",
+    "searchLayouts": null,
+    "sharingModel": "ControlledByParent"
+}
